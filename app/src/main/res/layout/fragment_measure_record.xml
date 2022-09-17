@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MeasureRecordFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_rcd_duration_start"
+            style="@style/custom_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:drawableLeft="@drawable/icon_calendar"
+            android:focusable="false" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/glb_wave"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_rcd_duration_end"
+            style="@style/custom_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:drawableLeft="@drawable/icon_calendar"
+            android:focusable="false" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_unit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/radio_group_height"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/btn_radio_max_outline"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_unit_day"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_radio"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/obj_msr_rcd_duration_day"
+            android:textColor="@drawable/btn_radio_text" />
+
+        <RadioButton
+            android:id="@+id/radio_unit_week"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_radio"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/obj_msr_rcd_week"
+            android:textColor="@drawable/btn_radio_text" />
+
+        <RadioButton
+            android:id="@+id/radio_unit_month"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_radio"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/obj_msr_rcd_month"
+            android:textColor="@drawable/btn_radio_text" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_heart"
+            app:tint="@color/zentry_red" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:paddingRight="10dp"
+            android:text="@string/obj_msr_rcd_heart"
+            android:textColor="@color/zentry_red"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.CombinedChart
+        android:id="@+id/lc_graph_HeartChart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_lung"
+            app:tint="@color/zentry_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:paddingRight="10dp"
+            android:text="@string/obj_msr_rcd_res"
+            android:textColor="@color/zentry_blue"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.CombinedChart
+        android:id="@+id/lc_graph_RespiratoryChart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

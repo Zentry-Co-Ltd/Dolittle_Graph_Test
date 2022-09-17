@@ -1,0 +1,223 @@
+<resources>
+    <string-array name="cat_breath">
+        <item>나폴레옹</item>
+        <item>나폴레옹 롱헤어</item>
+        <item>네벨룽</item>
+        <item>노르웨이지안 포레스트 캣</item>
+        <item>데본 렉스</item>
+        <item>돈스코이</item>
+        <item>라펌</item>
+        <item>라펌 숏헤어</item>
+        <item>러시안 블루</item>
+        <item>레그돌</item>
+        <item>망스</item>
+        <item>먼치킨</item>
+        <item>먼치킨 롱헤어</item>
+        <item>메인 쿤</item>
+        <item>믹스묘</item>
+        <item>민스킨</item>
+        <item>발리니즈</item>
+        <item>뱅갈</item>
+        <item>버릴라</item>
+        <item>버만</item>
+        <item>버미즈</item>
+        <item>봄베이</item>
+        <item>브라질리안 숏헤어</item>
+        <item>브리티시 롱헤어</item>
+        <item>브리티시 숏헤어</item>
+        <item>사바나</item>
+        <item>샤트롤스</item>
+        <item>샴</item>
+        <item>세렝게티</item>
+        <item>셀커크 렉스</item>
+        <item>소말리</item>
+        <item>스노우슈</item>
+        <item>스코티시 스트레이트</item>
+        <item>스코티시 폴드</item>
+        <item>스코티시 폴드 롱헤어</item>
+        <item>스키프 토이 밥테일</item>
+        <item>스털링</item>
+        <item>스핑크스</item>
+        <item>시베리안</item>
+        <item>싱가푸라</item>
+        <item>아메리칸 밥테일</item>
+        <item>아메리칸 밥테일 숏헤어</item>
+        <item>아메리칸 숏헤어</item>
+        <item>아메리칸 컬</item>
+        <item>아메리칸 컬 롱헤어</item>
+        <item>아비시니안</item>
+        <item>아시안 세미롱헤어</item>
+        <item>아시안 숏헤어</item>
+        <item>오리엔탈 롱헤어</item>
+        <item>오리엔탈 숏헤어</item>
+        <item>오스트레일리안 미스트</item>
+        <item>요크 초콜렛</item>
+        <item>유러피안 숏헤어</item>
+        <item>윽시캣</item>
+        <item>이그저틱 숏헤어</item>
+        <item>이집션 마우</item>
+        <item>자바니즈</item>
+        <item>저먼 렉스</item>
+        <item>제페니즈 밥테일</item>
+        <item>제페니즈 밥테일 롱헤어</item>
+        <item>친칠라</item>
+        <item>카호마니</item>
+        <item>컬러포인트 숏헤어</item>
+        <item>켈리포니아 스팽글드 캣</item>
+        <item>코니시 렉스</item>
+        <item>코렛</item>
+        <item>코리안 롱헤어</item>
+        <item>코리안 숏헤어</item>
+        <item>쿠릴리안 밥테일 롱헤어</item>
+        <item>쿠릴리안 밥테일 숏헤어</item>
+        <item>킴릭</item>
+        <item>타이</item>
+        <item>터키쉬 앙고라</item>
+        <item>터키시 밴</item>
+        <item>토이거</item>
+        <item>통키니즈</item>
+        <item>페르시안</item>
+        <item>페르시안 친친라</item>
+        <item>피터볼드</item>
+        <item>픽시밥</item>
+        <item>픽시밥 롱헤어</item>
+        <item>하바나 브라운</item>
+        <item>하이랜더 롱헤어</item>
+        <item>하이랜더 숏헤어</item>
+        <item>히말리얀</item>
+    </string-array>
+
+    <string-array name="dog_breath">
+        <item>골든 리트리버</item>
+        <item>그레이트 덴</item>
+        <item>그레이하운드</item>
+        <item>꼬똥 드 툴레아</item>
+        <item>네오폴리탄 마스티프</item>
+        <item>노르위전 엘크하운드(그레이)</item>
+        <item>노르위전 엘크하운드(블랙)</item>
+        <item>노리치 테리어</item>
+        <item>노바 스코샤 덕 톨링 리트리버</item>
+        <item>노퍽 테리어</item>
+        <item>뉴펀들랜드</item>
+        <item>닥스훈트</item>
+        <item>달마시안</item>
+        <item>댄디 딘몬트 테리어</item>
+        <item>도고 아르헨티노</item>
+        <item>도베르만</item>
+        <item>도사</item>
+        <item>디어하운드</item>
+        <item>라사 압소</item>
+        <item>라지 먼스터랜더</item>
+        <item>래브라도 리트리버</item>
+        <item>러프 콜리</item>
+        <item>레온베르거</item>
+        <item>레이크랜드 테리어</item>
+        <item>로디지안 리즈백</item>
+        <item>로트바일러</item>
+        <item>리틀 라이언 독</item>
+        <item>마스티프</item>
+        <item>말티즈</item>
+        <item>맨체스터 테리어</item>
+        <item>미니어쳐 불 테리어</item>
+        <item>미니어쳐 슈나우저</item>
+        <item>미니어쳐 핀셔</item>
+        <item>바센지</item>
+        <item>바셋 하운드</item>
+        <item>바이마라너</item>
+        <item>버니즈 마운틴 독</item>
+        <item>베들링턴 테리어</item>
+        <item>벨지안 세퍼드 독</item>
+        <item>보더 콜리</item>
+        <item>보르조이</item>
+        <item>보스턴 테리어</item>
+        <item>복서</item>
+        <item>부비에 데 플랑드르</item>
+        <item>불 테리어</item>
+        <item>불독</item>
+        <item>불마스티프</item>
+        <item>브리쉘 그리폰</item>
+        <item>브리타스 스파니엘</item>
+        <item>블랙 앤 탄 쿤 하운드</item>
+        <item>비글</item>
+        <item>비숑 프리제</item>
+        <item>비어디드 콜리</item>
+        <item>비즐라</item>
+        <item>빠삐용</item>
+        <item>쁘띠 바셋 그리폰 벤딘</item>
+        <item>사모예드 </item>
+        <item>살루키</item>
+        <item>세인트 버나드</item>
+        <item>셰틀랜드 쉽독</item>
+        <item>슈나우저</item>
+        <item>스무스 콜리</item>
+        <item>스무스 폭스 테리어</item>
+        <item>스카이 테리어</item>
+        <item>스코티쉬 테리어</item>
+        <item>시바</item>
+        <item>시베리안 허스키</item>
+        <item>시츄</item>
+        <item>시코쿠</item>
+        <item>실리햄 테리어</item>
+        <item>아메리칸 스태포드셔 테리어</item>
+        <item>아메리칸 아키타</item>
+        <item>아메리칸 코커 스파니엘</item>
+        <item>아이리쉬 레드 앤 화이트 세터</item>
+        <item>아이리쉬 울프하운드</item>
+        <item>아이리쉬 워터 스파니엘</item>
+        <item>아이리쉬소프트 코티드 휘튼 테리어</item>
+        <item>아키타</item>
+        <item>아펜핀셔</item>
+        <item>아프간 하운드</item>
+        <item>알라스칸 말라뮤트 </item>
+        <item>에어데일 테리어</item>
+        <item>오스트레일리언 셰퍼드</item>
+        <item>오스트레일리언 캐틀 독</item>
+        <item>올드 잉글리쉬 쉽독</item>
+        <item>와이어 폭스 테리어</item>
+        <item>요크셔 테리어</item>
+        <item>웨스트 하일랜드 화이트 테리어</item>
+        <item>웨시 코기 펨브로크</item>
+        <item>웰시 코기 카디건</item>
+        <item>웰시 테리어</item>
+        <item>이탈리안 사이트하운드</item>
+        <item>인글리쉬 세터</item>
+        <item>일글리쉬 코커 스파니엘</item>
+        <item>잉글리쉬 스프링거 스파니엘</item>
+        <item>잉글리쉬 포인터</item>
+        <item>자이언트 슈나우저</item>
+        <item>재패니즈 스피츠</item>
+        <item>잭 러셀 테리어</item>
+        <item>저먼 셰퍼드 독</item>
+        <item>저먼 숏 헤어드 포인팅 독</item>
+        <item>저먼 와이어 헤어드 포인팅 독</item>
+        <item>저먼 헌팅 테리어</item>
+        <item>차우차우</item>
+        <item>차이니즈 크레스티드 독</item>
+        <item>치와와</item>
+        <item>캐벌리어 킹 찰스 스파니엘 </item>
+        <item>케리 블루 테리어</item>
+        <item>케언 테리어</item>
+        <item>코리아 진도 독</item>
+        <item>코몬도르</item>
+        <item>키슈</item>
+        <item>키스혼드</item>
+        <item>킹 찰스 스파니엘</item>
+        <item>타이 리지백 독</item>
+        <item>티베탄 마스티프</item>
+        <item>티베탄 테리어</item>
+        <item>파라오 하운드</item>
+        <item>파슨 러셀 테리어</item>
+        <item>퍼그</item>
+        <item>페키니즈</item>
+        <item>포르투기즈 워터 독</item>
+        <item>포메라니언 </item>
+        <item>푸들</item>
+        <item>풀리</item>
+        <item>프레사 까나리오</item>
+        <item>프렌치 불독</item>
+        <item>플랫 코티드 리트리버</item>
+        <item>피레니언 마운틴 독</item>
+        <item>호카이도</item>
+        <item>휘핏</item>
+    </string-array>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CareDiseaseActivity">
+
+    <TextView
+        style="@style/textView_black_bold"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="#ffffff"
+        android:elevation="3dp"
+        android:gravity="center"
+        android:text="@string/obj_care_disease_title"
+        android:textSize="@dimen/title_textSize" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_care_disease_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/mainColor1"
+            android:src="@drawable/icon_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/white" />
+
+        <ListView
+            android:id="@+id/list_care_disease"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_light_gray"
+            android:divider="@null"
+            android:dividerHeight="15dp"
+            android:listSelector="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_care_disease_finish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_full_height"
+        android:elevation="3dp"
+        android:background="@drawable/btn_main_sqaure"
+        android:text="@string/obj_care_disease_finish"
+        android:textColor="@color/btn_text_color"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,230 @@
+<resources>
+    <string-array name="disease">
+        <item>Anesthesia : Sedation and General</item>
+        <item>Blastomycosis</item>
+        <item>Cervical Ventroflexion</item>
+        <item>Chlamydophila 감염증</item>
+        <item>Cobalamin 결핍증</item>
+        <item>Coccidioidomycosis</item>
+        <item>Cytauxzoon 감염증</item>
+        <item>Digital Diseases</item>
+        <item>Pyrethrin과 Pyrethroid 중독증</item>
+        <item>Sporothrix 감염증</item>
+        <item>Systemic Fungal Diseases</item>
+        <item>각막 궤양</item>
+        <item>각막염과 결막염</item>
+        <item>간 지질증간 지질증; 지방간</item>
+        <item>간지질증(지방간)</item>
+        <item>간질</item>
+        <item>갑상선 기능항진증</item>
+        <item>개에 의한 교상</item>
+        <item>거대결장</item>
+        <item>고소추락 증후군</item>
+        <item>고알도스테론증</item>
+        <item>고양이 나병</item>
+        <item>고양이 면역결핍 바이러스 감염</item>
+        <item>고양이 백혈병 바이러스</item>
+        <item>고양이 장 코로나 바이러스 감염</item>
+        <item>고양이 전염성 복막염</item>
+        <item>고양이 특발성 방광염</item>
+        <item>고양이에 의한 교상</item>
+        <item>고양이의 유선종양</item>
+        <item>고칼륨혈증</item>
+        <item>고칼슘혈증</item>
+        <item>고혈압성 심근병증</item>
+        <item>골관절염</item>
+        <item>공장 튜브장착술</item>
+        <item>과립막세포종양</item>
+        <item>광견병</item>
+        <item>구-비강누공의 치료</item>
+        <item>구강 종양</item>
+        <item>구더기증</item>
+        <item>귀지선 질환</item>
+        <item>급성 신부전</item>
+        <item>급성 췌장염</item>
+        <item>기관 질환</item>
+        <item>기저세포종</item>
+        <item>기타 육종</item>
+        <item>기흉</item>
+        <item>꼬리샘 증후군</item>
+        <item>꼬리손상</item>
+        <item>낙엽성 천포창</item>
+        <item>노카디아증</item>
+        <item>녹내장</item>
+        <item>농흉</item>
+        <item>뇌수막종</item>
+        <item>다낭성 신장질환</item>
+        <item>다식성 체중 감소</item>
+        <item>다지증</item>
+        <item>단두종 증후군</item>
+        <item>담관 낭종</item>
+        <item>담관 삼각부 질환</item>
+        <item>당뇨: 합병증을 수반하지 않은</item>
+        <item>당뇨병: 만성 합병증</item>
+        <item>당뇨병성 케톤산증</item>
+        <item>대동맥협착증</item>
+        <item>독액에 의한 중독: 거미류</item>
+        <item>독액에 의한 중독: 곤충류</item>
+        <item>독액에 의한 중독: 뱀</item>
+        <item>독초 중독</item>
+        <item>동맥관 개존증</item>
+        <item>림프절 질환</item>
+        <item>림프종</item>
+        <item>림프종</item>
+        <item>만성 기관지 질환; 천식</item>
+        <item>만성 신부전</item>
+        <item>만성 췌장염</item>
+        <item>말단비대증</item>
+        <item>말라세지아 피부염</item>
+        <item>망막 질환</item>
+        <item>맹크스 증후군</item>
+        <item>메타알데하이드 중독</item>
+        <item>면역매개성 용혈성빈혈</item>
+        <item>문맥-전신혈관 단락</item>
+        <item>바이러스성 피부염</item>
+        <item>바토넬라 감염증</item>
+        <item>방광 종양</item>
+        <item>방광의 신경계</item>
+        <item>방선균증</item>
+        <item>배농관과 결절</item>
+        <item>백내장</item>
+        <item>범백혈구 감소증 [고양이 파보바이러스 감염증]</item>
+        <item>벼룩 알러지 피부염</item>
+        <item>보데텔라 감염증</item>
+        <item>복수</item>
+        <item>부신피질기능저하증</item>
+        <item>부신피질기능항진증</item>
+        <item>부정맥</item>
+        <item>부종양성 증후군</item>
+        <item>비대성 심근증</item>
+        <item>비동과 전두동 감염</item>
+        <item>비루</item>
+        <item>비만세포종</item>
+        <item>비만세포종</item>
+        <item>비인두 질환</item>
+        <item>비정상 크기의 신장</item>
+        <item>비타민 A 중독증</item>
+        <item>비타민 D 독성</item>
+        <item>빈혈</item>
+        <item>빠르게 성장하는 마이코박테리아증</item>
+        <item>사구체신염</item>
+        <item>살모넬라증</item>
+        <item>살서제 중독증</item>
+        <item>상완신경증</item>
+        <item>선암종</item>
+        <item>선암종과 암종</item>
+        <item>선형이물</item>
+        <item>섬유육종</item>
+        <item>세균성 복막염</item>
+        <item>속립성 피부염</item>
+        <item>수신증</item>
+        <item>슬개골 탈구</item>
+        <item>승저증, 구더기증</item>
+        <item>식도 질환</item>
+        <item>신생아 적혈구용혈</item>
+        <item>신우신염</item>
+        <item>신장 기능저하증</item>
+        <item>신장주위 가성낭종</item>
+        <item>실명</item>
+        <item>심실 중격 결손증</item>
+        <item>심잡음</item>
+        <item>심장사상충</item>
+        <item>십이지장충</item>
+        <item>십자인대 파열</item>
+        <item>아나플라즈마 감염증</item>
+        <item>아밀로이드증</item>
+        <item>아세트아미노펜 중독</item>
+        <item>아스퍼질러스 감염증</item>
+        <item>아스피린 중독증</item>
+        <item>아토피성 피부염</item>
+        <item>안검 질환과 수술</item>
+        <item>안구내 종양</item>
+        <item>암종증</item>
+        <item>에틸렌글리콜 중독</item>
+        <item>염증성 간염</item>
+        <item>염증성 장 질환</item>
+        <item>염증성 폴립과 종괴</item>
+        <item>오목 가슴</item>
+        <item>외이염</item>
+        <item>요관 폐색</item>
+        <item>요도폐색</item>
+        <item>요로 결석증</item>
+        <item>요붕증</item>
+        <item>위내 기생충</item>
+        <item>위내 모구</item>
+        <item>유기인과 카바메이트 중독</item>
+        <item>유미흉</item>
+        <item>유선 증식증</item>
+        <item>육종, 주사부위</item>
+        <item>음식 알러지</item>
+        <item>이첨판 판막이형성</item>
+        <item>입술단열 재부착술</item>
+        <item>자궁축농증과 자궁점액종</item>
+        <item>자율신경계 실조증</item>
+        <item>재급여 증후군</item>
+        <item>저마그네슘혈증</item>
+        <item>저알부민혈증</item>
+        <item>저인혈증</item>
+        <item>저칼륨혈증</item>
+        <item>저칼슘혈증</item>
+        <item>전두동 패쇄술</item>
+        <item>전신 고혈압</item>
+        <item>전정 증후군</item>
+        <item>제3    안검</item>
+        <item>제한성 심근증</item>
+        <item>족부 피부염: 림프구-형질세포성</item>
+        <item>중이염과 외이염</item>
+        <item>중증 근무력증</item>
+        <item>중피종</item>
+        <item>지각 과민증</item>
+        <item>지방층염</item>
+        <item>지알디아 감염증</item>
+        <item>직장 질환</item>
+        <item>췌장 외분비 기능 부전증</item>
+        <item>치은염-구내염-인두염</item>
+        <item>칼리시바이러스 감염증</item>
+        <item>코 구더기증</item>
+        <item>코티쉬 폴드종 고양이의 골연골 이형성증</item>
+        <item>콕시디움증</item>
+        <item>크립토스포리디아증; 와포자충증</item>
+        <item>크립토코커스 감염증</item>
+        <item>톡소플라즈마 감염증</item>
+        <item>트리코모나스 감염증</item>
+        <item>특발성 궤양성 피부염</item>
+        <item>특이 세균 감염</item>
+        <item>티아민결핍</item>
+        <item>파상풍</item>
+        <item>팔로사증증</item>
+        <item>페스트</item>
+        <item>폐 기생충</item>
+        <item>폐동맥 협착증</item>
+        <item>폐섬유증</item>
+        <item>포도막염</item>
+        <item>피부 기생충</item>
+        <item>피부 편평상피 암종</item>
+        <item>피부사상균증</item>
+        <item>하악 섬유연골 분리증</item>
+        <item>하인즈 소체 용혈성 빈혈과 메트헤모글로빈혈증</item>
+        <item>항문낭 질환</item>
+        <item>향정신성 약물 중독</item>
+        <item>허혈성 뇌질환</item>
+        <item>헤르페스바이러스 감염</item>
+        <item>헤모플라스마 감염증</item>
+        <item>헬리코박터균</item>
+        <item>혈관육종</item>
+        <item>혈전색성 질환</item>
+        <item>호너 증후군</item>
+        <item>호산구 과다 증후군</item>
+        <item>호산구성 각막염</item>
+        <item>호산구성 육아종 복합체</item>
+        <item>확장성 심근증</item>
+        <item>황달</item>
+        <item>회충 감염증</item>
+        <item>횡격막 허니아</item>
+        <item>후두질환</item>
+        <item>흉선종</item>
+        <item>흉수</item>
+        <item>흡충: 간, 담관, 췌장</item>
+        <item>히스토플라즈마증</item>
+    </string-array>
+</resources>

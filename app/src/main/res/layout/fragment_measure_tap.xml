@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeasureTapFragment">
+
+    <com.dinuscxj.progressbar.CircleProgressBar
+        android:id="@+id/progressbar_tap"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        app:progress_background_color="@color/color_light_gray"
+        app:progress_end_color="@color/mainColor1"
+        app:progress_start_color="@color/mainColor1"
+        app:progress_stroke_cap="round"
+        app:progress_stroke_width="15dp"
+        app:progress_style="solid_line"
+        app:progress_text_size="0dp" />
+
+    <Button
+        android:id="@+id/btn_tap_touch"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="@+id/progressbar_tap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/progressbar_tap" />
+
+    <RadioGroup
+        android:id="@+id/radio_measure_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/radio_group_height"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/btn_radio_max_outline"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/progressbar_tap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
+
+        <RadioButton
+            android:id="@+id/radio_measure_type_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_radio"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/obj_measure_type_heart"
+            android:textColor="@drawable/btn_radio_text"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio_measure_type_res"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_radio"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/obj_measure_type_res"
+            android:textColor="@drawable/btn_radio_text"
+            android:textStyle="bold" />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radio_tap_measure_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/radio_group_height"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/btn_radio_max_outline"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/progressbar_tap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7">
+
+        <RadioButton
+            android:id="@+id/radio_tap_measure_time_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_radio"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/obj_setting_measure_half_minute"
+            android:textColor="@drawable/btn_radio_text"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio_tap_measure_time_60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_radio"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/obj_setting_measure_minute"
+            android:textColor="@drawable/btn_radio_text"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_tap_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_round_main_max"
+        android:drawableRight="@drawable/icon_refresh"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/white"
+        android:paddingHorizontal="@dimen/btn_round_padding"
+        android:text="@string/obj_btn_restart"
+        android:textColor="@color/btn_text_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/radio_tap_measure_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/radio_tap_measure_time" />
+
+    <TextView
+        android:id="@+id/tv_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/obj_tv_start"
+        android:textColor="@color/mainColor1"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/progressbar_tap"
+        app:layout_constraintEnd_toEndOf="@+id/progressbar_tap"
+        app:layout_constraintStart_toStartOf="@+id/progressbar_tap"
+        app:layout_constraintTop_toTopOf="@+id/progressbar_tap" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

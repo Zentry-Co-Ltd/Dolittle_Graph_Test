@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AnimalRegisterActivity">
+
+    <TextView
+        android:id="@+id/tv_animal_reg_title"
+        style="@style/textView_black_bold"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="#FFFFFF"
+        android:elevation="1dp"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="@string/obj_ani_reg_title"
+        android:textSize="@dimen/title_textSize"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scroll_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/textView_ani_reg_sub_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/obj_ani_reg_name"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_ani_reg_name"
+                    style="@style/custom_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/obj_ani_reg_name_hint"
+                    android:inputType="textPersonName"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/textView_ani_reg_sub_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/obj_ani_reg_birth_age"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:id="@+id/et_ani_reg_birth"
+                        style="@style/custom_editText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="57"
+                        android:ems="10"
+                        android:hint="@string/obj_ani_reg_birth_hint"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/et_birth"
+                        app:layout_constraintTop_toTopOf="@+id/et_birth"
+                        app:srcCompat="@drawable/icon_calendar"
+                        app:tint="@color/black" />
+
+                    <EditText
+                        android:id="@+id/et_ani_reg_year"
+                        style="@style/custom_editText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="@string/obj_ani_reg_age_hint"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/obj_ani_reg_age_year"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_ani_reg_month"
+                        style="@style/custom_editText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="@string/obj_ani_reg_age_hint"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/obj_ani_reg_age_month"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/textView_ani_reg_sub_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/obj_ani_reg_species"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:id="@+id/radio_species"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_radio_max_outline"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_species_dog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/obj_ani_reg_species_dog"
+                        android:textColor="@drawable/btn_radio_text" />
+
+                    <RadioButton
+                        android:id="@+id/radio_species_cat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/obj_ani_reg_species_cat"
+                        android:textColor="@drawable/btn_radio_text" />
+                </RadioGroup>
+
+                <TextView
+                    style="@style/textView_ani_reg_sub_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/obj_ani_reg_breed" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/et_ani_reg_breed"
+                        style="@style/custom_editText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="@string/obj_ani_reg_breed_hint"
+                        android:inputType="textPersonName"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_ani_reg_breed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/et_ani_reg_breed"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/et_ani_reg_breed"
+                        app:srcCompat="@drawable/icon_search"
+                        app:tint="@color/black" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    style="@style/textView_ani_reg_sub_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/obj_ani_reg_sex"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:id="@+id/radio_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_radio_max_outline"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_sex_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/obj_ani_reg_sex_male"
+                        android:textColor="@drawable/btn_radio_text" />
+
+                    <RadioButton
+                        android:id="@+id/radio_sex_male_ne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/obj_ani_reg_sex_male_na"
+                        android:textColor="@drawable/btn_radio_text" />
+
+                    <RadioButton
+                        android:id="@+id/radio_sex_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/obj_ani_reg_sex_female"
+                        android:textColor="@drawable/btn_radio_text" />
+
+                    <RadioButton
+                        android:id="@+id/radio_sex_female_ne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/obj_ani_reg_sex_female_na"
+                        android:textColor="@drawable/btn_radio_text" />
+                </RadioGroup>
+
+                <TextView
+                    style="@style/textView_ani_reg_sub_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/obj_ani_reg_heart_disease"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:id="@+id/radio_heart_disease"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_radio_max_outline"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_heart_disease_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/obj_ani_reg_heart_disease_no"
+                        android:textColor="@drawable/btn_radio_text" />
+
+                    <RadioButton
+                        android:id="@+id/radio_heart_disease_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/obj_ani_reg_heart_disease_yes"
+                        android:textColor="@drawable/btn_radio_text" />
+
+                    <RadioButton
+                        android:id="@+id/radio_heart_disease_unknown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/obj_ani_reg_heart_disease_unknown"
+                        android:textColor="@drawable/btn_radio_text" />
+                </RadioGroup>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_hd_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/obj_ani_reg_hd_title"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:visibility="gone"
+                    android:id="@+id/radio_hd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_radio_max_outline"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_hd_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/obj_ani_reg_hd_a"
+                        android:textColor="@drawable/btn_radio_text" />
+                    <RadioButton
+                        android:id="@+id/radio_hd_b1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/obj_ani_reg_hd_b1"
+                        android:textColor="@drawable/btn_radio_text" />
+                    <RadioButton
+                        android:id="@+id/radio_hd_b2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/obj_ani_reg_hd_b2"
+                        android:textColor="@drawable/btn_radio_text" />
+                    <RadioButton
+                        android:id="@+id/radio_hd_c1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/obj_ani_reg_hd_c1"
+                        android:textColor="@drawable/btn_radio_text" />
+                    <RadioButton
+                        android:id="@+id/radio_hd_c2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/obj_ani_reg_hd_c2"
+                        android:textColor="@drawable/btn_radio_text" />
+                    <RadioButton
+                        android:id="@+id/radio_hd_d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/obj_ani_reg_hd_d"
+                        android:textColor="@drawable/btn_radio_text" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:background="@color/color_light_gray"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+                <TextView
+                    style="@style/textView_ani_reg_sub_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/obj_ani_reg_disease_title"
+                    android:textColor="@color/text_color_1" />
+
+                <ListView
+                    android:id="@+id/list_disease"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginVertical="15dp"
+                    android:layout_weight="1"
+                    android:descendantFocusability="blocksDescendants"
+                    android:divider="@null"
+                    android:dividerHeight="15dp"
+                    android:listSelector="@android:color/transparent" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_disease_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_round_main_line_10"
+                    android:text="질환 추가하기"
+                    android:textColor="@color/mainColor1" />
+
+                <LinearLayout
+                    android:id="@+id/container_ani_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/textView_black_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/obj_ani_edit_delete" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_animal_delete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/btn_round_main_line_10"
+                        android:drawableLeft="@drawable/icon_delete"
+                        android:drawableTint="@color/mainColor1"
+                        android:paddingHorizontal="10dp"
+                        android:text="@string/obj_ani_edit_delete_btn"
+                        android:textColor="@color/mainColor1" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_animal_register_finish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_full_height"
+        android:background="@drawable/btn_main_sqaure"
+        android:text="@string/obj_ani_reg_finish"
+        android:textColor="@color/btn_text_color"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</LinearLayout>
