@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_full_height">55dp</dimen>
+    <dimen name="margin_horizon">30dp</dimen>
+    <dimen name="semi_padding">15dp</dimen>
+    <dimen name="health_care_drawable_padding">17dp</dimen>
+    <dimen name="line_view_margin">30dp</dimen>
+    <dimen name="line_view_height">1dp</dimen>
+    <dimen name="btn_round_padding">20dp</dimen>
+    <dimen name="margin_to_top">10dp</dimen>
+    <dimen name="switch_square_text_size">20sp</dimen>
+
+    <dimen name="menu_width">30dp</dimen>
+    <dimen name="menu_height">30dp</dimen>
+
+    <dimen name="radio_group_height">35dp</dimen>
+
+    <dimen name="title_height">70dp</dimen>
+    <dimen name="title_textSize">30sp</dimen>
+
+    <dimen name="title_semi_height">50dp</dimen>
+    <dimen name="title_semi_textSize">20sp</dimen>
+
+    <dimen name="card_rounding">10dp</dimen>
+    <dimen name="card_padding">20dp</dimen>
+
+    <dimen name="weekday_gap">2dp</dimen>
+
+    <dimen name="health_care_card_radius">10dp</dimen>
+
+</resources>

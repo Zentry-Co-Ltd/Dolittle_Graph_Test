@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/textView_black_bold"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="@dimen/title_height"
+        android:focusableInTouchMode="true"
+        android:text="@string/obj_reg_title"
+        android:textSize="@dimen/title_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/textView_ani_reg_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/obj_reg_email"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_register_email"
+        app:layout_constraintStart_toStartOf="@+id/et_register_email" />
+
+    <EditText
+        android:id="@+id/et_register_email"
+        style="@style/custom_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="30dp"
+        android:hint="@string/obj_reg_email_hint"
+        android:enabled="false"
+        android:inputType="textEmailAddress"
+        android:textSelectHandle="@color/mainColor1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/et_register_nick_name"
+        style="@style/custom_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="30dp"
+        android:hint="@string/obj_reg_nick_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_register_email" />
+
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/textView_ani_reg_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/obj_reg_nick"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_register_nick_name"
+        app:layout_constraintStart_toStartOf="@+id/et_register_nick_name" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_register_finish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_full_height"
+        android:background="@drawable/btn_main_sqaure"
+        android:text="@string/obj_reg_finish"
+        android:textColor="@color/btn_text_color"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

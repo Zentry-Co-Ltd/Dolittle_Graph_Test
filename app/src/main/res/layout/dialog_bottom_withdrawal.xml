@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="bottom"
+    android:layout_margin="20dp"
+    android:animateLayoutChanges="true">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="@string/msg_exit_title" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_exit_content" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_withdrawal_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:background="@drawable/btn_round_gray_10"
+        android:textStyle="bold"
+        android:elevation="0dp"
+        android:text="@string/msg_exit_no" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_withdrawal_yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_round_main_10"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:elevation="0dp"
+        android:layout_marginTop="15sp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:text="@string/msg_exit_yes"
+        />
+
+</LinearLayout>

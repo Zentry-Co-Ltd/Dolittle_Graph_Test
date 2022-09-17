@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".CareDiaryWriteActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:elevation="3dp">
+
+            <TextView
+                android:id="@+id/tv_diary_page_title"
+                style="@style/textView_black_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/title_semi_height"
+                android:layout_marginStart="10dp"
+                android:drawableLeft="@drawable/icon_arrow_left"
+                android:gravity="center"
+                android:text="@string/obj_care_diary_page_title"
+                android:textSize="@dimen/title_semi_textSize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_diary_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/margin_horizon">
+
+                <TextView
+                    android:id="@+id/tv_diary_animal_name"
+                    style="@style/textView_black_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_pet_paws_blue"
+                    android:drawablePadding="15dp"
+                    android:focusableInTouchMode="true"
+                    android:focusedByDefault="true"
+                    android:paddingVertical="20dp"
+                    android:text="호두"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textView_black_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/obj_care_diary_subject"
+                        android:textSize="25sp" />
+
+                    <EditText
+                        android:id="@+id/et_diary_category"
+                        style="@style/custom_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:hint="@string/obj_care_diary_subject_hint" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textView_black_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/obj_care_diary_title"
+                        android:textSize="25sp" />
+
+                    <EditText
+                        android:id="@+id/et_diary_title"
+                        style="@style/custom_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:hint="@string/obj_care_diary_title_tint" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/textView_black_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/obj_care_diary_content"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/et_diary_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/et_border"
+                    android:gravity="top"
+                    android:minHeight="300dp"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@drawable/et_cursor" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_diary_remove"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/btn_round_main_line_10"
+                    android:drawableLeft="@drawable/icon_delete"
+                    android:drawableTint="@color/mainColor1"
+                    android:paddingHorizontal="10dp"
+                    android:text="@string/obj_care_diary_remove"
+                    android:textColor="@color/mainColor1" />
+            </LinearLayout>
+        </ScrollView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_diary_finish"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_full_height"
+            android:background="@drawable/btn_main_sqaure"
+            android:text="@string/glb_finish"
+            android:textColor="@color/btn_text_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_diary_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/icon_edit"
+        android:visibility="invisible"
+        app:backgroundTint="@color/mainColor1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

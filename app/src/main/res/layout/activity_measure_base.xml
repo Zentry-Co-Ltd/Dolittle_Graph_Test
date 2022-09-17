@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainBaseActivity">
+
+    <TextView
+        android:id="@+id/tv_measure_title"
+        style="@style/textView_black_bold"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:gravity="center"
+        android:text="@string/obj_measure_title"
+        android:textSize="@dimen/title_textSize" />
+
+    <RadioGroup
+        android:id="@+id/radio_measure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_radio_sqaure_outline"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_measure_tap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_radio"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/obj_measure_radio_tap"
+            android:textColor="@drawable/btn_radio_text"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio_measure_dolittle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_radio"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/obj_measure_radio_dolittle"
+            android:textColor="@drawable/btn_radio_text"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio_measure_record"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_radio"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/obj_measure_radio_record"
+            android:textColor="@drawable/btn_radio_text"
+            android:textCursorDrawable="@drawable/btn_radio_text"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/container_measure"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</LinearLayout>

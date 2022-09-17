@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="green">#8BC34A</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <!-- Main Colors -->
+    <color name="mainColor1">#005DFF</color>
+    <color name="mainColor1_dark">#004ACC</color>
+    <color name="mainColor1_light">#85005DFF</color>
+    <color name="fore_color1">#FFFFFFFF</color>
+    <color name="fore_color2">#005DFF</color>
+    <color name="popup_text_color">#000000</color>
+    <color name="popup_text_highlight_color">#005DFF</color>
+    <color name="et_hint_color1">#80FFFFFF</color>
+
+    <color name="zentry_red">#FFEE2F4E</color>
+    <color name="zentry_blue">#00A8FF</color>
+
+    <color name="light_red">#90FF0000</color>
+    <color name="light_blue">#90005DFF</color>
+
+
+    <color name="color_bright_gray">#05000000</color>
+    <color name="color_light_gray">#10000000</color>
+    <color name="color_soft_gray">#20000000</color>
+    <color name="color_normal_gray">#80000000</color>
+    <color name="color_dark_gray">#A0000000</color>
+
+    <color name="color_clear_white">#90FFFFFF</color>
+
+    <color name="home_card_back_color">#005DFF</color>
+    <color name="text_color_1">#000000</color>
+
+
+    <!-- 투명도를 사용하지 않고 직접적으로 색감을 조절한 버전 -->
+    <color name="light_red_not_clear">#FF6F6F</color>
+    <color name="light_blue_not_clear">#6FA3FF</color>
+
+    <color name="color_light_gray_not_clear">#CCCCCC</color>
+
+
+    <!-- on / off button -->
+    <color name="on_off_color_press">#40FFFFFF</color>
+    <color name="on_off_color_unpress">#00000000</color>
+
+    <!-- btn -->
+    <color name="btn_press">@color/mainColor1_dark</color>
+    <color name="btn_default">@color/mainColor1</color>
+    <color name="btn_text_color">@color/white</color>
+
+    <!-- gray btn -->
+    <color name="btn_gray_press">@color/color_soft_gray</color>
+    <color name="btn_gray_default">@color/color_light_gray</color>
+    <color name="btn_gray_text_color">@color/white</color>
+
+    <!-- Switch btn -->
+    <color name="btn_switch_press">@color/mainColor1</color>
+    <color name="btn_switch_default">#00000000</color>
+
+    <!-- etc -->
+    <color name="StatusBarColor">@color/white</color>
+    <color name="lineColor">#000000</color>
+
+    <!-- fab_gps -->
+    <color name="fab_gps_tint">#ffa200</color>
+
+</resources>

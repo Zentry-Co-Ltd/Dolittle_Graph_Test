@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".DeviceConnectingPopup">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="디바이스 스캔 "
+            android:textColor="@color/popup_text_highlight_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/icon_refresh"
+            app:tint="@color/popup_text_highlight_color"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_refresh"
+            app:layout_constraintStart_toEndOf="@+id/tv_refresh"
+            app:layout_constraintTop_toTopOf="@+id/tv_refresh" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_no_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="스캔된 디바이스가 없습니다"
+        android:textColor="@color/popup_text_color"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/list_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+    <TextView
+        android:id="@+id/tv_goto_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp"
+        android:drawableRight="@drawable/icon_arrow_right"
+        android:drawableTint="@color/popup_text_color"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="디바이스 연결방법 "
+        android:textColor="@color/popup_text_color"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+</LinearLayout>

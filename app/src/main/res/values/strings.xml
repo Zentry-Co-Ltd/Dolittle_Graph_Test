@@ -1,0 +1,414 @@
+<resources>
+    <string name="app_name_rr">Dolittle_graph_호흡_BPM표시</string>
+    <string name="app_name_hr">Dolittle_graph_심박_BPM표시</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kakao_app_key" translatable="false">7bd5635223614a8da06ec0d6317a65c0</string>
+    <string name="kakao_oauth_key" translatable="false">kakao7bd5635223614a8da06ec0d6317a65c0</string>
+    <string name="kakao_rest_KakaoAK" translatable="false">KakaoAK fd0fac75c204418419bcb62dab5333f0</string>
+
+
+    <!-- ble -->
+    <string name="thingy_please_wait">Please wait…</string>
+    <string name="thingy_not_connected">Not connected to a Thingy</string>
+    <string name="thingy_not_configured">No Thingy configured</string>
+    <string name="thingy_error_service_not_bound">ThingyProxyService is not bound to the activity!</string>
+    <string name="thingy_error_mtu_failed">MTU configuration failed with error %d</string>
+    <string name="dfu_action_abort">Abort</string>
+    <string name="dfu_channel_description">Shows DFU progress.</string>
+    <string name="dfu_channel_name">DFU</string>
+    <string name="dfu_status_aborted">Aborted</string>
+    <string name="dfu_status_aborted_msg">Application upload has been canceled.</string>
+    <string name="dfu_status_aborting">Aborting…</string>
+    <string name="dfu_status_completed">Done</string>
+    <string name="dfu_status_completed_msg">Application has been sent successfully.</string>
+    <string name="dfu_status_connecting">Connecting…</string>
+    <string name="dfu_status_connecting_msg">Connecting to %s…</string>
+    <string name="dfu_status_disconnecting">Disconnecting…</string>
+    <string name="dfu_status_disconnecting_msg">Disconnecting from %s…</string>
+    <string name="dfu_status_error">Upload failed</string>
+    <string name="dfu_status_error_msg">DFU process failed.</string>
+    <string name="dfu_status_foreground_content">Update in progress…</string>
+    <string name="dfu_status_foreground_title">Device Firmware Update</string>
+    <string name="dfu_status_initializing">Initializing…</string>
+    <string name="dfu_status_starting">Starting DFU…</string>
+    <string name="dfu_status_starting_msg">Initializing DFU process…</string>
+    <string name="dfu_status_switching_to_dfu">Starting bootloader…</string>
+    <string name="dfu_status_switching_to_dfu_msg">Waiting for bootloader…</string>
+    <string name="dfu_status_uploading">Uploading…</string>
+    <string name="dfu_status_uploading_msg">Transmitting firmware to %s…</string>
+    <string name="dfu_status_uploading_part" formatted="false">Uploading part %d/%d…</string>
+    <string name="dfu_status_validating">Validating…</string>
+    <string name="dfu_status_validating_msg">Validating…</string>
+    <string name="dfu_unknown_name">unnamed device</string>
+    <string name="thingy_action_disconnect">Disconnect</string>
+    <string name="thingy_disconnected">%s disconnected! try to Reconnect</string>
+    <string name="ble_turned_off">Please turn on bluetooth and reconnect to the device in order to keep receiving values from your Thingy</string>
+    <string name="thingy_notification_text">%s is still connected</string>
+    <string name="device_deleted">Device has been deleted!</string>
+    <string name="delete_thingy_title">Delete Device</string>
+    <string name="delete_thingy_message">Deleting this Device will remove all the saved configuration for this Thingy from the app. Do you wish to continue?</string>
+    <string name="cancel_initial_configuration_process_title">디바이스 연결 취소</string>
+    <string name="cancel_initial_configuration_process_message">연결 단계를 취소할 경우 처음부터 다시 시작해야 합니다. 취소하시겠습니까?</string>
+    <string name="version">version %s</string>
+    <string name="info_git_hub">GitHub</string>
+    <string name="one_connected">%s is connected</string>
+    <string name="two_connected">%d are connected</string>
+    <string name="one_disconnected">%s is disconnected</string>
+    <string name="two_disconnected">%d are disconnected</string>
+
+    <string name="default_thingy_name">Thingy:52</string>
+    <string name="no_ble">Device doesn\'t support BLE!</string>
+    <string name="heart_graph">Heart</string>
+    <string name="respiratory_graph">Respiratory</string>
+    <string name="time">Time</string>
+
+    <plurals name="thingy_notification_text_nothing_connected">
+        <item quantity="one">%s is disconnected</item>
+        <item quantity="two">%d are disconnected</item>
+        <item quantity="few">%d are disconnected</item>
+        <item quantity="other">%d are disconnected</item>
+        <item quantity="many">%d are disconnected</item>
+    </plurals>
+
+    <!-- global -->
+    <string name="glb_not_available">n/a</string>
+    <string name="glb_null"></string>
+    <string name="glb_error">에러가 나타났어요. 계속 나타난다면 문의해주세요.</string>
+    <string name="glb_cancel">취소</string>
+    <string name="glb_ok">확인</string>
+    <string name="glb_remove">삭제</string>
+    <string name="glb_finish">완료하기</string>
+    <string name="glb_save">저장</string>
+    <string name="glb_login_ok">로그인 성공</string>
+    <string name="glb_login_no">로그인 실패</string>
+    <string name="glb_access_token">accessToken</string>
+    <string name="glb_refresh_token">refreshToken</string>
+    <string name="glb_fragment_tag">Popup</string>
+    <string name="glb_api_kakao_url">https://dapi.kakao.com/</string>
+    <string name="glb_api_dolittle_url">https://api.moon-cluster.zentry.kr/</string>
+
+    <string name="glb_intent_extra_count">count</string>
+    <string name="glb_intent_extra_time">time</string>
+    <string name="glb_intent_extra_name">name</string>
+    <string name="glb_intent_extra_result">result</string>
+    <string name="glb_intent_extra_cancel">cancel</string>
+    <string name="glb_intent_extra_measure_type">measure_type</string>
+    <string name="glb_intent_extra_measure_heart">measure_heart</string>
+    <string name="glb_intent_extra_measure_res">measure_res</string>
+    <string name="glb_intent_extra_add_edit">isEdit</string>
+    <string name="glb_intent_extra_edit">edit</string>
+    <string name="glb_intent_extra_add">add</string>
+    <string name="glb_intent_extra_diary_id">diary_id</string>
+    <string name="glb_rate_hr_data_obj">HR_MANUAL</string>
+    <string name="glb_rate_rr_data_obj">RR_MANUAL</string>
+    <string name="glb_rate_hr_auto_data_obj">HR_AUTO</string>
+    <string name="glb_rate_rr_auto_data_obj">RR_AUTO</string>
+    <string name="glb_weight_data_obj_unit_kg">kg</string>
+    <string name="glb_field_pet_name">name</string>
+    <string name="glb_field_type">type</string>
+    <string name="glb_type_all">ALL</string>
+    <string name="glb_field_Alarm_ID">AlarmID</string>
+    <string name="glb_field_diary_id">diaryId</string>
+    <string name="glb_field_disease">disease</string>
+    <string name="glb_field_sort_id">_id</string>
+    <string name="glb_field_timestamp">timeStamp</string>
+    <string name="glb_field_key_species">species</string>
+    <string name="glb_field_key_dog">dog</string>
+    <string name="glb_field_key_cat">cat</string>
+
+    <string name="glb_temp_animal_name">(Animal Name)</string>
+    <string name="gbl_temp_user_name">(user Nickname)</string>
+    <string name="glb_temp_date">0000 - 00 - 00</string>
+    <string name="glb_temp_subject">일상</string>
+    <string name="glb_temp_title">(제목)</string>
+    <string name="glb_label_weight">Weight</string>
+    <string name="glb_wave">~</string>
+    <string name="glb_times_kor"> 회</string>
+    <string name="glb_minus">-</string>
+    <string name="glb_device_not_connected">블루투스 통신 디바이스를 연결 해주세요.</string>
+
+    <string name="glb_json_result">result</string>
+    <string name="glb_api_ret_invalid">Invalid username or password</string>
+    <string name="glb_api_ret_duplicated_email">Duplicated Email</string>
+    <string name="glb_api_ret_duplicated_nick">Duplicated Nickname</string>
+
+    <!-- MainBaseActivity -->
+    <string name="msg_gps_internet_off">인터넷 혹은 GPS가 켜져있는지 확인 부탁드려요.</string>
+    <string name="msg_permission_rationale_text">근처 병원 조회 서비스를 이용하려면 위치 권한이 필요해요.</string>
+    <string name="msg_permission_denied_title">알고 계시나요?</string>
+    <string name="msg_permission_denied_text">근처 병원 조회 서비스를 이용하려면 위치 권한이 필요하기에 직접 설정을 부탁드려요.</string>
+
+    <string name="msg_back_quit">뒤로 가기 버튼을 한 번 더 누르시면 종료됩니다.</string>
+    <string name="msg_date_mili_format">yyyy-MM-dd\'T\'HH:mm:ss.SSS</string>
+    <string name="msg_date_sec_format">yyyy-MM-dd HH:mm:ss</string>
+
+    <!-- HomeFragment -->
+    <string name="obj_home_reg_animal">반려동물 등록하기</string>
+    <string name="obj_home_title">나의 반려동물</string>
+
+    <!-- MapFragment -->
+    <string name="obj_map_title">근처 병원</string>
+    <string name="obj_map_list_open">목록 보기</string>
+    <string name="obj_map_open">지도 보기</string>
+
+    <!-- RegisterActivity -->
+    <string name="msg_duplicated_email">존재하는 이메일입니다.</string>
+    <string name="msg_duplicated_nick">존재하는 닉네임입니다.</string>
+    <string name="msg_is_input_nick">닉네임을 입력하셨나요?</string>
+
+    <string name="obj_reg_title">회원 가입</string>
+    <string name="obj_reg_email">이메일</string>
+    <string name="obj_reg_email_hint">이메일을 입력해주세요</string>
+    <string name="obj_reg_nick">닉네임</string>
+    <string name="obj_reg_nick_hint">닉네임을 입력해주세요</string>
+    <string name="obj_reg_finish">완료하기</string>
+
+    <!-- AnimalRegisterActivity -->
+    <string name="msg_register_not_selected_species">종을 선택해주세요</string>
+    <string name="msg_animal_information_register_already_register">이미 등록된 반려동물인 것 같습니다</string>
+    <string name="msg_animal_information_register_error">알 수 없는 에러</string>
+
+    <string name="obj_ani_reg_title">반려동물 등록하기</string>
+    <string name="obj_ani_reg_name">이름</string>
+    <string name="obj_ani_reg_name_hint">이름을 입력해주세요</string>
+    <string name="obj_ani_reg_birth_age">생년월일 / 나이</string>
+    <string name="obj_ani_reg_birth_hint">생년월일 입력</string>
+    <string name="obj_ani_reg_age_hint">0</string>
+    <string name="obj_ani_reg_age_year">년</string>
+    <string name="obj_ani_reg_age_month">개월</string>
+    <string name="obj_ani_reg_species">종</string>
+    <string name="obj_ani_reg_species_dog">개</string>
+    <string name="obj_ani_reg_species_cat">고양이</string>
+    <string name="obj_ani_reg_breed">품종</string>
+    <string name="obj_ani_reg_breed_hint">품종을 선택해주세요</string>
+    <string name="obj_ani_reg_sex">성별 (중성화)</string>
+    <string name="obj_ani_reg_sex_male">수컷</string>
+    <string name="obj_ani_reg_sex_male_na">수컷(중성화)</string>
+    <string name="obj_ani_reg_sex_female">암컷</string>
+    <string name="obj_ani_reg_sex_female_na">암컷(중성화)</string>
+    <string name="obj_ani_reg_heart_disease">심장병 이력</string>
+    <string name="obj_ani_reg_heart_disease_yes">있음</string>
+    <string name="obj_ani_reg_heart_disease_no">없음</string>
+    <string name="obj_ani_reg_heart_disease_unknown">모름</string>
+    <string name="obj_ani_reg_hd_title">심장병 단계</string>
+    <string name="obj_ani_reg_hd_a">A</string>
+    <string name="obj_ani_reg_hd_b1">B1</string>
+    <string name="obj_ani_reg_hd_b2">B2</string>
+    <string name="obj_ani_reg_hd_c1">C1</string>
+    <string name="obj_ani_reg_hd_c2">C2</string>
+    <string name="obj_ani_reg_hd_d">D</string>
+    <string name="obj_ani_reg_disease_title">보유 질환</string>
+    <string name="obj_ani_reg_finish">등록 완료</string>
+
+    <string name="obj_ani_edit_title">반려동물 정보 수정하기</string>
+    <string name="obj_ani_edit_finish">수정 완료</string>
+    <string name="obj_ani_edit_delete">반려동물 정보 삭제</string>
+    <string name="obj_ani_edit_delete_btn">반려동물 정보 삭제하기</string>
+    <string name="msg_animal_information_removed">반려동물 정보가 삭제되었습니다</string>
+    <string name="msg_animal_information_remove_error1">알 수 없는 에러로 반려동물 정보가 삭제되지 못했습니다.</string>
+    <string name="msg_animal_information_remove_error2">알 수 없는 에러2</string>
+    <string name="msg_animal_information_remove_error3">알 수 없는 에러3</string>
+    <string name="msg_animal_information_edit_finished">수정 완료</string>
+    <string name="msg_animal_information_edit_error1">알 수 없는 에러로 인행 수정 실패</string>
+    <string name="msg_animal_information_edit_error2">알 수 없는 에러2</string>
+    <string name="msg_animal_information_edit_error3">알 수 없는 에러3</string>
+    <string name="msg_animal_info_delete_sure_title">반려동물 정보 삭제</string>
+    <string name="msg_animal_info_delete_sure_content">삭제한 반려동물 정보는 다시 돌릴 수 없습니다.\n정말 삭제하시겠습니까?</string>
+    <string name="msg_animal_info_delete_sure_ok">삭제</string>
+
+
+    <!-- SearchBreedFragment -->
+    <string name="search_species_title">품종 선택</string>
+    <string name="msg_etc_cats">기타 묘종</string>
+    <string name="msg_etc_dogs">기타 견종</string>
+
+    <!-- SearchDiseaseFragment -->
+    <string name="search_disease_title">질환 선택</string>
+
+    <!-- DiseaseAdapter -->
+    <string name="disease_remove_title">질환 삭제</string>
+    <string name="disease_remove_message">을(를) 삭제하시겠습니까?</string>
+
+    <!-- BirthPickerDialogFragment -->
+    <string name="msg_birth_picker_age_front">나이&#160;:&#160;</string>
+    <string name="msg_birth_picker_age_back">살</string>
+    <string name="obj_birth_picker_title">생일 입력</string>
+    <!--    <string name="obj_birth_picker_age">나이&#160;:&#160;1살</string>-->
+    <string name="obj_birth_picker_age">0개월</string>
+    <string name="obj_birth_picker_cancel">취소</string>
+    <string name="obj_birth_picker_finish">완료</string>
+
+
+    <!-- MeasureBaseFragment -->
+    <string name="obj_measure_title">측정하기</string>
+    <string name="obj_measure_title_heart">심박 측정하기</string>
+    <string name="obj_measure_title_res">호흡 측정하기</string>
+    <string name="obj_measure_radio_tap">탭 측정</string>
+    <string name="obj_measure_radio_dolittle">두리틀 측정</string>
+    <string name="obj_measure_radio_record">기록</string>
+
+
+    <!-- MeasureDolittleFragment -->
+    <string name="obj_measure_dolittle_start">측정 시작</string>
+    <string name="obj_measure_dolittle_cancel">측정 취소</string>
+
+
+    <!-- TapMeasureFragment -->
+    <string name="obj_tv_start">터치해서 시작</string>
+    <string name="obj_btn_restart">다시 시작하기</string>
+    <string name="obj_btn_save">저장하기</string>
+    <string name="msg_touch">TOUCH\n</string>
+    <string name="obj_measure_type_heart">심박</string>
+    <string name="obj_measure_type_res">호흡</string>
+
+    <!-- TapMeasureSavePopupFragment -->
+    <string name="obj_save_content_save">저장하시겠습니까?</string>
+    <string name="obj_tap_save_content_title">측정 완료</string>
+    <string name="obj_tap_save_content_sample">측정된 값은 분당 0회 입니다.\n저장할까요?</string>
+    <string name="obj_tap_save_content_front">측정된 값은 분당&#160;</string>
+    <string name="obj_tap_save_content_back">회 입니다.\n저장할까요?</string>
+    <string name="obj_tap_save_ok">저장</string>
+    <string name="obj_tap_save_cancel">다시 측정</string>
+
+    <!-- AutoMeasureSavePopupFragment -->
+    <string name="obj_auto_save_content_hr">심박수&#160;:&#160;</string>
+    <string name="obj_auto_save_content_rr">호흡수&#160;:&#160;</string>
+
+    <!-- MeasureRecordFragment -->
+    <string name="obj_msr_rcd_week">Week</string>
+    <string name="obj_msr_rcd_month">Month</string>
+    <string name="obj_msr_rcd_setting">기간 설정</string>
+    <string name="obj_msr_rcd_heart">심박</string>
+    <string name="obj_msr_rcd_res">호흡</string>
+    <string name="obj_msr_rcd_duration_day">Day</string>
+    <string name="obj_msr_rcd_duration_week">Week</string>
+    <string name="obj_msr_rcd_duration_month">Month</string>
+
+    <!-- ChartMarkerView -->
+    <string name="obj_chart_maker_avg">평균</string>
+    <string name="obj_chart_maker_sd">표준 편차</string>
+
+
+    <!-- HealthCareFragment -->
+    <string name="obj_care_heart">심박</string>
+    <string name="obj_care_res">호흡</string>
+    <string name="obj_care_cd">심장병 단계 : </string>
+    <string name="obj_care_cd_no">심장병 이력 : 없음</string>
+    <string name="obj_care_cd_dont_know">심장병 이력 : 모름</string>
+    <string name="obj_care_sick">보유 질환</string>
+    <string name="obj_care_diary">일기</string>
+    <string name="obj_care_weight">몸무게</string>
+    <string name="obj_care_measure">주요 수치</string>
+    <string name="obj_care_measure_heart">-회</string>
+    <string name="obj_care_measure_res">-회</string>
+    <string name="obj_care_measure_weight">-kg</string>
+
+    <!-- WeightActivity -->
+    <string name="obj_weight_title">몸무게</string>
+    <string name="obj_weight_recent_weight">최근 몸무게</string>
+    <string name="obj_weight_sample">-</string>
+    <string name="obj_weight_kg"> kg</string>
+    <string name="obj_weight_graph_title">변화 추이</string>
+    <string name="obj_weight_add">몸무게 기록하기</string>
+    <string name="obj_weight_footer">평균 · 최고 · 최저</string>
+    <string name="obj_weight_footer_max">최고</string>
+    <string name="obj_weight_footer_min">최저</string>
+    <string name="obj_weight_footer_avg">평균</string>
+    <string name="msg_weight_need_value">값을 입력해주세요</string>
+
+    <!-- WeightAddFragment -->
+    <string name="obj_weight_add_title">몸무게 기록하기</string>
+    <string name="obj_weight_add_hint">0.0</string>
+
+    <!-- CareDiseaseActivity -->
+    <string name="obj_care_disease_title">보유 질환</string>
+    <string name="obj_care_disease_finish">완료하기</string>
+
+    <!-- CareBaseDiaryActivity -->
+    <string name="msg_diary_need_content">내용을 입력해주세요</string>
+    <string name="obj_care_diary_page_title">일기</string>
+    <string name="obj_care_diary_write">일기 작성</string>
+    <string name="obj_care_diary_list">일기 보기</string>
+    <string name="obj_care_diary_remove">일기 삭제하기</string>
+    <string name="obj_care_diary_sort_recent">최신순</string>
+    <string name="obj_care_diary_sort_old">오래된순</string>
+
+
+    <!-- CareDiaryWriteFragment -->
+    <string name="obj_care_diary_subject">주제</string>
+    <string name="obj_care_diary_subject_hint">#일상 #병원 #건강</string>
+    <string name="obj_care_diary_title">제목</string>
+    <string name="obj_care_diary_title_tint">제목을 입력해주세요</string>
+    <string name="obj_care_diary_content">내용</string>
+    <string name="msg_care_diary_removed">일기가 삭제되었습니다.</string>
+    <string name="obj_care_diary_edit">일기 수정하기</string>
+
+    <!-- SettingActivity -->
+    <string name="obj_setting_title">설정</string>
+    <string name="obj_setting_welcome">환영합니다</string>
+    <string name="obj_setting_nim">&#160;님!</string>
+    <string name="obj_setting_measure_time">탭 측정 시간 설정</string>
+    <string name="obj_setting_measure_half_minute">30초</string>
+    <string name="obj_setting_measure_minute">60초</string>
+    <string name="obj_setting_agree_title">알람 및 접근 동의</string>
+    <string name="obj_setting_agree_event">이벤트 및 혜택 알림</string>
+    <string name="obj_setting_cs_title">고객 센터</string>
+    <string name="obj_setting_cs_notice">공지사항</string>
+    <string name="obj_setting_cs_inquiry">일반문의</string>
+    <string name="obj_setting_cs_inq_partner">입점/제휴 문의</string>
+    <string name="obj_setting_cs_inq_hospital">병원 관리자 계정신청</string>
+    <string name="obj_setting_terms_title">약관 및 개인정보</string>
+    <string name="obj_setting_terms_service">서비스 이용 약관</string>
+    <string name="obj_setting_terms_personal">개인정보 처리 방침</string>
+    <string name="obj_setting_terms_version">두리틀 버전 정보</string>
+    <string name="obj_setting_terms_version_temp">hm 1.0</string>
+    <string name="obj_setting_terms_quit">회원 탈퇴</string>
+    <string name="obj_setting_account_title">계정</string>
+    <string name="obj_setting_account_email">E-mail</string>
+    <string name="obj_setting_account_email_temp">contact@zentry.kr</string>
+    <string name="obj_setting_account_logout">로그아웃</string>
+
+    <!-- footer -->
+    <string name="footer_com_name">젠트리 주식회사</string>
+    <string name="footer_ceo">대표이사 : 장현호</string>
+    <string name="footer_com_adress">충청남도 천안시 서북구 불당동 1415 5층 506호 젠트리</string>
+    <string name="footer_business_number">사업자번호 : 270-81-02310</string>
+    <string name="footer_secu_info">개인정보보호책임자 : 문승현 / 구매안전(에크로스)서비스</string>
+    <string name="footer_cumstomer_center">고객센터 | 070-000-0000</string>
+    <string name="footer_email">contact@zentry.kr</string>
+
+    <!-- dialog_bottom_withdrawal -->
+    <string name="msg_exit_title">Dolittle 회원을 탈퇴하시겠습니까?</string>
+    <string name="msg_exit_content">개인정보 이용 기록은 모두 삭제되며,\n삭제된 계정은 복구할 수 없습니다.</string>
+    <string name="msg_exit_no">아니오</string>
+    <string name="msg_exit_yes">예, 탈퇴하겠습니다.</string>
+
+    <!-- logout Dialog -->
+    <string name="msg_logout_text">로그아웃</string>
+    <string name="msg_logout_question">정말로 로그아웃을 하실건가요?</string>
+
+    <!-- ScheduleFragment -->
+    <string name="obj_schedule_title">의 일정</string>
+
+    <!-- ScheduleAddFragment -->
+    <string name="obj_scd_add_title">일정 추가</string>
+    <string name="obj_scd_add_sub_hint">알람제목</string>
+    <string name="obj_scd_add_repeat_one">한번반</string>
+    <string name="obj_scd_add_repeat_repeat">반복</string>
+    <string name="obj_scd_add_time">시간</string>
+    <string name="obj_scd_add_time_hint">오전 09:00</string>
+    <string name="obj_scd_add_date">날짜</string>
+    <string name="obj_scd_add_date_hint">2021 - 01 - 01 (월)</string>
+    <string name="obj_scd_add_agree_push">푸쉬(PUSH) 알람 받기</string>
+    <string name="obj_scd_add_finish">저장하기</string>
+    <string name="obj_scd_edit_finish">수정완료</string>
+    <string name="obj_scd_delete">일정 삭제하기</string>
+    <string name="obj_scd_add_week0">월</string>
+    <string name="obj_scd_add_week1">화</string>
+    <string name="obj_scd_add_week2">수</string>
+    <string name="obj_scd_add_week3">목</string>
+    <string name="obj_scd_add_week4">금</string>
+    <string name="obj_scd_add_week5">토</string>
+    <string name="obj_scd_add_week6">일</string>
+
+</resources>

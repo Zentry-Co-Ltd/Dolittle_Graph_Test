@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    tools:context=".ReserveFragment">
+
+    <RadioGroup
+        android:id="@+id/radio_time"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/btn_radio_max_outline"
+        android:checkedButton="@+id/off"
+        android:elevation="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/timerangepicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.7">
+
+        <RadioButton
+            android:id="@+id/radio_time_am"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_radio"
+            android:button="@null"
+            android:gravity="center"
+            android:text="AM"
+            android:textColor="@drawable/btn_radio_text" />
+
+        <RadioButton
+            android:id="@+id/radio_time_pm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_radio"
+            android:button="@null"
+            android:gravity="center"
+            android:text="PM"
+            android:textColor="@drawable/btn_radio_text" />
+    </RadioGroup>
+
+    <nl.joery.timerangepicker.TimeRangePicker
+        android:id="@+id/timerangepicker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.9"
+        app:trp_clockLabelColor="@color/mainColor1"
+        app:trp_clockLabelSize="12dp"
+        app:trp_clockTickColor="@color/mainColor1"
+        app:trp_endTime="6:00"
+        app:trp_sliderColor="@color/color_light_gray"
+        app:trp_sliderRangeColor="@color/mainColor1"
+        app:trp_sliderWidth="17dp"
+        app:trp_startTime="1:00"
+        app:trp_thumbColor="@color/mainColor1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:text="DONE"
+        android:textColor="@color/mainColor1"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/timerangepicker"
+        app:layout_constraintEnd_toEndOf="@+id/timerangepicker"
+        app:layout_constraintStart_toStartOf="@+id/timerangepicker"
+        app:layout_constraintTop_toTopOf="@+id/timerangepicker" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/tv_startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="11:00"
+        android:textColor="@color/mainColor1"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timerangepicker" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:textColor="@color/mainColor1_light"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_startTime"
+        app:layout_constraintStart_toStartOf="@+id/tv_startTime" />
+
+    <TextView
+        android:id="@+id/tv_start_am"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="AM"
+        android:textColor="@color/mainColor1_light"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_startTime"
+        app:layout_constraintStart_toEndOf="@+id/tv_startTime"
+        app:layout_constraintTop_toTopOf="@+id/tv_startTime"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <TextView
+        android:id="@+id/tv_endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="06:00"
+        android:textColor="@color/mainColor1"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/timerangepicker" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="END"
+        android:textColor="@color/mainColor1_light"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_endTime"
+        app:layout_constraintStart_toStartOf="@+id/tv_endTime" />
+
+    <TextView
+        android:id="@+id/tv_end_am"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="PM"
+        android:textColor="@color/mainColor1_light"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_endTime"
+        app:layout_constraintStart_toEndOf="@+id/tv_endTime"
+        app:layout_constraintTop_toTopOf="@+id/tv_endTime"
+        app:layout_constraintVertical_bias="0.75" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

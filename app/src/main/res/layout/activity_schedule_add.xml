@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ScheduleAddActivity">
+
+    <TextView
+        android:id="@+id/tv_scd_page_title"
+        style="@style/textView_black_bold"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        android:elevation="1dp"
+        android:focusableInTouchMode="true"
+        android:focusedByDefault="true"
+        android:gravity="center"
+        android:text="@string/obj_scd_add_title"
+        android:textSize="@dimen/title_textSize" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <EditText
+                android:id="@+id/et_scd_add_sub"
+                style="@style/custom_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/obj_scd_add_sub_hint" />
+
+            <RadioGroup
+                android:id="@+id/radio_scd_add_repeat"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_radio_max_outline"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/obj_scd_add_repeat_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_radio"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/obj_scd_add_repeat_one"
+                    android:textColor="@drawable/btn_radio_text" />
+
+                <RadioButton
+                    android:id="@+id/obj_scd_add_repeat_repeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_radio"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/obj_scd_add_repeat_repeat"
+                    android:textColor="@drawable/btn_radio_text" />
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:id="@+id/container_scd_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textView_black_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/obj_scd_add_time"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/et_scd_once_time"
+                        style="@style/custom_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="right"
+                        android:hint="@string/obj_scd_add_time_hint" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textView_black_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/obj_scd_add_date"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/et_scd_once_date"
+                        style="@style/custom_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="right"
+                        android:hint="@string/obj_scd_add_date_hint" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_scd_repeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_scd_week0"
+                        style="@style/textView_black_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circle_black_line"
+                        android:gravity="center"
+                        android:text="@string/obj_scd_add_week0"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_scd_week1"
+                        style="@style/textView_black_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/circle_black_line"
+                        android:gravity="center"
+                        android:text="@string/obj_scd_add_week1"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_scd_week2"
+                        style="@style/textView_black_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/circle_black_line"
+                        android:gravity="center"
+                        android:text="@string/obj_scd_add_week2"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_scd_week3"
+                        style="@style/textView_black_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/circle_black_line"
+                        android:gravity="center"
+                        android:text="@string/obj_scd_add_week3"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_scd_week4"
+                        style="@style/textView_black_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/circle_black_line"
+                        android:gravity="center"
+                        android:text="@string/obj_scd_add_week4"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_scd_week5"
+                        style="@style/textView_black_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/circle_black_line"
+                        android:gravity="center"
+                        android:text="@string/obj_scd_add_week5"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_scd_week6"
+                        style="@style/textView_black_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/circle_black_line"
+                        android:gravity="center"
+                        android:text="@string/obj_scd_add_week6"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textView_black_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/obj_scd_add_time"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/et_scd_repeat_time"
+                        style="@style/custom_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="right"
+                        android:hint="@string/obj_scd_add_time_hint" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_alarm_delete"
+        style="@style/textView_main_color_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_round_main_line_10"
+        android:drawableLeft="@drawable/icon_delete"
+        android:drawableTint="@color/mainColor1"
+        android:elevation="0dp"
+        android:text="@string/obj_scd_delete" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_scd_add_finish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_full_height"
+        android:background="@drawable/btn_main_sqaure"
+        android:text="@string/obj_scd_add_finish"
+        android:textColor="@color/btn_text_color"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</LinearLayout>
